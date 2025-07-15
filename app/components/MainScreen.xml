@@ -10,7 +10,7 @@
 		<Label id="myLabelUnder" text="Свобода!" width="1280" height="900" horizAlign="center" vertAlign="center" />
 	</children>
 
-	<script type="text/brightscript" uri="pkg:/source/helpers/colorsHelper.brs" />
+	<script type="text/brightscript" uri="pkg:/source/helpers/colorsHelper.brs" /> 
 	<script type="text/brightscript" uri="MainScreen.brs" />
 
 </component>

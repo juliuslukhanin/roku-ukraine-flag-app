@@ -3,6 +3,7 @@ sub init()
 
     'Init helpers
     initColors()
+    m.colors = m.global.colors
 
     'Find nodes
     m.myLabel = m.top.findNode("myLabel")
@@ -15,8 +16,8 @@ sub init()
     m.myLabelUnder.font.size = 70
 
     'Set the color to light blue
-    m.myLabel.color = m.global.yellow
-    m.myLabelUnder.color = m.global.blue
+    m.myLabel.color = m.colors.yellow
+    m.myLabelUnder.color = m.colors.blue
 
     'Set value for onKeyEvent
     m.changeUPAWas = true
@@ -32,17 +33,17 @@ function onKeyEvent(key as string, press as boolean) as boolean
         else if key = "OK"
             'Set the flag of Ukraine to UPA
             if m.changeUPAWas
-                m.rectangleUp.color = m.global.red
-                m.rectangleDown.color = m.global.black
-                m.myLabel.color = m.global.red
-                m.myLabelUnder.color = m.global.black
+                m.rectangleUp.color = m.colors.red
+                m.rectangleDown.color = m.colors.black
+                m.myLabel.color = m.colors.red
+                m.myLabelUnder.color = m.colors.black
                 m.changeUPAWas = false
             else
             'Set the flag of UPA to Ukraine
-                m.rectangleUp.color = m.global.yellow
-                m.rectangleDown.color = m.global.blue
-                m.myLabel.color = m.global.yellow
-                m.myLabelUnder.color = m.global.blue
+                m.rectangleUp.color = m.colors.yellow
+                m.rectangleDown.color = m.colors.blue
+                m.myLabel.color = m.colors.yellow
+                m.myLabelUnder.color = m.colors.blue
                 m.changeUPAWas = true
             end if
         end if
