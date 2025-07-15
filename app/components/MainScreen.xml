@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="MainScreen" extends="Scene">
+	<interface>
+	</interface>
+
+	<children>
+		<Rectangle id="rectangleUp" color="0xFFFF00FF" width="1280" height="2000" translation="[0,0]" />
+		<Rectangle id="rectangleDown" color="0x0000FFFF" width="1280" height="405" translation="[0,0]" />
+		<Label id="myLabel" text="Potuznist!!!" width="1280" height="700" horizAlign="center" vertAlign="center" />
+		<Label id="myLabelUnder" text="Свобода!" width="1280" height="900" horizAlign="center" vertAlign="center" />
+	</children>
+
+	<script type="text/brightscript" uri="pkg:/source/helpers/colorsHelper.brs" />
+	<script type="text/brightscript" uri="MainScreen.brs" />
+
+</component>

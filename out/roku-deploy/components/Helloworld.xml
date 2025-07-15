@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="HelloWorld" extends="Scene"> 
+	<interface>
+		<function name="printNumber"/>
+	</interface>
+	<children>
+      <Label id="myLabel" 
+      	text="Hello Yulii!"
+      	width="1280" 
+      	height="720" 
+      	horizAlign="center"
+      	vertAlign="center"
+      	/>
+    </children>
+<!-- BrightScript Portion -->
+<!-- End of BrightScript Portion -->
+<script type="text/brightscript" uri="Helloworld.brs" />
+
+</component>
