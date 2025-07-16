@@ -1,9 +1,8 @@
 sub init()
     m.top.setFocus(true)
 
-    'Init helpers
-    initColors()
-    m.colors = m.global.colors
+    'init colors
+    m.colors = colors()
 
     'Find nodes
     m.myLabel = m.top.findNode("myLabel")
